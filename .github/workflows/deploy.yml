@@ -1,0 +1,24 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - main  # Change to your branch name if needed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.CPANEL_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H your-cpanel-host >> ~/.ssh/known_hosts
+
+      - name: Deploy via Rsync
+        run: rsync -avz --exclude '.git' --exclude 'node_modules' --delete -e "ssh -o StrictHostKeyChecking=no" ./ your-cpanel-user@your-cpanel-host:~/public_html

@@ -6,7 +6,7 @@
  *---------------------------------------------------------------------------------------*/
 
 function sayHello($name) {
-	echo "Hello $name!";
+	echo "$name!";
 }
 
 ?>
@@ -18,7 +18,7 @@ function sayHello($name) {
 	<body>
 		<?php 
 		
-		sayHello('Hello World .....');
+		sayHello('Say Hello World .....');
 			
 		phpinfo(); 
 			
