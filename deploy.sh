@@ -3,7 +3,7 @@
 # Define variables
 
 CPANEL_USER="gobelin"
-CPANEL_HOST="https://demo.globleinfotech.com/"
+CPANEL_HOST="demo.globleinfotech.com/"
 REMOTE_PATH="public_html"  # Adjust this based on your cPanel directory
 
 # Sync files from GitHub Codespaces to cPanel
