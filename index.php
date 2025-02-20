@@ -18,7 +18,7 @@ function sayHello($name) {
 	<body>
 		<?php 
 		
-		sayHello('EDIT Update PHP Page Yeah.............!!!');
+		sayHello('Again update PHP Page Yeah.............!!!');
 			
 		phpinfo(); 
 			
