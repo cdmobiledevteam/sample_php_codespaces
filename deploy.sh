@@ -2,7 +2,7 @@
 
 # Define variables
 
-CPANEL_USER="globlein"
+CPANEL_USER="gobelin"
 CPANEL_HOST="https://demo.globleinfotech.com/"
 REMOTE_PATH="public_html"  # Adjust this based on your cPanel directory
 
