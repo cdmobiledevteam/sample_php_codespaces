@@ -18,7 +18,7 @@ function sayHello($name) {
 	<body>
 		<?php 
 		
-		sayHello('INEDX FILE TEXT UPDATEED PHP CODE .............!!!');
+		sayHello('INEDX FILE TEXT UPDATEED PHP CODE AGAIN PUSH CODE .............!!!');
 			
 		phpinfo(); 
 			
